@@ -6,6 +6,24 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-10 py-4 bg-gradient-to-b from-black/80 to-transparent">
+        <Image
+          src="/images/logo.png"
+          alt="IKON Strength & Performance"
+          width={120}
+          height={32}
+          className="h-8 w-auto"
+          priority
+        />
+        <a
+          href="#contact"
+          className="text-xs font-bold tracking-widest uppercase text-white/80 hover:text-white transition-colors"
+        >
+          Contact
+        </a>
+      </nav>
+
       {/* Background image */}
       <Image
         src="/images/lifter.png"
