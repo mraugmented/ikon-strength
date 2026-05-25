@@ -39,24 +39,17 @@ export default function HybridGym() {
             </div>
           </FadeIn>
 
-          {/* Coach photos grid */}
+          {/* Facility image */}
           <FadeIn delay={0.2} direction="right">
-            <div className="grid grid-cols-2 gap-3">
-              {coaches.map((coach, i) => (
-                <div
-                  key={i}
-                  className="relative aspect-[3/4] overflow-hidden rounded-2xl group"
-                >
-                  <Image
-                    src={coach.src}
-                    alt={coach.alt}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    sizes="(max-width: 768px) 50vw, 25vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                </div>
-              ))}
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/hybrid-gym.jpg"
+                alt="IKON Strength & Performance — hybrid gym facility with athletes training across multiple disciplines"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
             </div>
           </FadeIn>
         </div>
